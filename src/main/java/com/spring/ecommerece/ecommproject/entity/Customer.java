@@ -14,7 +14,7 @@ public class Customer extends User{
     @Column(name = "contact_number")
     private String contactNumber;
 
-    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
     @JoinTable(name = "customer_address_table" , joinColumns = {@JoinColumn(name = "customer_id")},inverseJoinColumns = {@JoinColumn(name = "add_id")})
     private Set<Address> address = new HashSet<>();
 

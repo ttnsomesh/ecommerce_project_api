@@ -1,5 +1,6 @@
 package com.spring.ecommerece.ecommproject.controller;
 
+import com.spring.ecommerece.ecommproject.entity.Address;
 import com.spring.ecommerece.ecommproject.entity.Customer;
 import com.spring.ecommerece.ecommproject.entity.Seller;
 import com.spring.ecommerece.ecommproject.repository.CustomerRepo;

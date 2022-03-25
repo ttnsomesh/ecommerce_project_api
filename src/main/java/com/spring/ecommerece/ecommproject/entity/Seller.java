@@ -15,7 +15,7 @@ public class Seller extends User{
     private String companyContact;
     private String companyName;
 
-    @OneToOne(cascade = CascadeType.MERGE)
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinTable(name = "seller_address_table" , joinColumns = {@JoinColumn(name = "seller_id")},inverseJoinColumns = {@JoinColumn(name = "add_id")})
     private Address address;
 
